@@ -1,0 +1,12 @@
+.sidebar {
+  flex: 3;
+  border-radius: 8px;
+  background: white;
+}
+
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+
