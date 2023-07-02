@@ -1,7 +1,7 @@
 .group {
     height: fit-content;
-    width: 22%;
-    left: 3%;
+    width: 18%;
+    left: 2%;
     margin-top: 1.5rem;
     position: fixed;
     border-radius: 8px;
@@ -36,6 +36,7 @@
 .line {
     width: 100%;
     color: grey;
+    margin: 1% 0% 1% 0%;
 }
 
 .homePage {
@@ -169,12 +170,12 @@ top: 2%;
 width: 60%;
 }
 
-.initials .handleAccount1{
+.handleAccount1{
 font-weight: 300;
-font-size: x-small;
+font-size: smaller;
 }
 
-.initials .handleUsername1{
+.handleUsername1{
 font-weight: 400;
 }
 
