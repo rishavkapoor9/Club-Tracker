@@ -59,7 +59,9 @@ export default function Post({ post }) {
           </div>
           <div className="postTopRight"> <MoreVertIcon /></div>
         </div>
-        <img className="postImg" src={post.photo} alt="" />
+        <div className="imgcont">
+          <img className="postImg" src={post.photo} alt="" />
+        </div>
         <div className="postBottom">
           <div className="postBottomLeft">
 
@@ -78,7 +80,7 @@ export default function Post({ post }) {
           </div>
           <div className="postText">Post Desc Goes Here</div>
           <div className="commentSection">
-            <input className="commentSection" type="text" ref={commentInputRef} onChange={handleInputChange}
+            <input className="commentSection1" type="text" ref={commentInputRef} onChange={handleInputChange}
               placeholder="Enter your comment..."
             />
             {comments.length > 0 && (

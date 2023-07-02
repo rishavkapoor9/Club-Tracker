@@ -2,7 +2,7 @@
     height: fit-content;
     width: 18%;
     left: 2%;
-    margin-top: 1.5rem;
+    margin-top: 2vh;
     position: fixed;
     border-radius: 8px;
     box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.15);
@@ -41,7 +41,7 @@
 
 .homePage {
     color: #039;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     padding: 1%;
     
@@ -138,7 +138,7 @@
 
 .scrollable-list-1 {
     overflow-y: scroll;
-    height: 133px;
+    height: 125px;
     width: 95%;
     padding: 0px;
     margin: 1% 0% 0% 2.5%;
@@ -146,7 +146,7 @@
 
 .scrollable-list-2 {
     overflow-y: scroll;
-    height: 133px;
+    height: 125px;
     width: 95%;
     padding: 0%;
     margin: 1% 0% 0% 2.5%;
@@ -154,7 +154,7 @@
 
 .scrollable-list-3 {
     overflow-y: scroll;
-    height: 133px;
+    height: 125px;
     width: 95%;
     padding: 0%;
     margin: 1% 0% 0% 2.5%;
