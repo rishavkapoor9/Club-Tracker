@@ -12,11 +12,11 @@ export default function Share() {
       <div className="shareWrapper">
         <div className="shareTop">
           <div className="user-handel">
-            <div className="initials">
-              <div className="handleUsername">Enactus IIT Roorkee</div>
-              <div className="handleAccount">enactus_iitr</div>
+            <div className="initials2">
+              <div className="handleUsername2">Enactus IIT Roorkee</div>
+              <div className="handleAccount2">enactus_iitr</div>
             </div>
-            <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+            <img className="shareProfileImg2" src="/assets/person/1.jpeg" alt="" />
           </div>
           <div className="postField">
           <button className="shareInput"> <a href="/create-post" className="link">What's in your mind</a> </button>
