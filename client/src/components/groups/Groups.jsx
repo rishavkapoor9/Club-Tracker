@@ -45,31 +45,31 @@ export default function Groups(props) {
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link className="club-name-1">Data Science</Link>
                             </li>
                         </ul>
                     </div>
@@ -79,31 +79,31 @@ export default function Groups(props) {
                         <ul className="noBullets-2">
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-2">
                                 <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                         </ul>
                     </div>
@@ -113,31 +113,31 @@ export default function Groups(props) {
                         <ul className="noBullets-3">
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-3">Data Science</div>
+                                <Link className="club-name-3">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-3">Data Science</div>
+                                <Link className="club-name-3">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-3">Data Science</div>
+                                <Link className="club-name-3">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-2">Data Science</div>
+                                <Link className="club-name-2">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-3">Data Science</div>
+                                <Link className="club-name-3">Data Science</Link>
                             </li>
                             <li className="l-3">
                                 <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-3">Data Science</div>
+                                <Link className="club-name-3">Data Science</Link>
                             </li>
                         </ul>
                     </div>
