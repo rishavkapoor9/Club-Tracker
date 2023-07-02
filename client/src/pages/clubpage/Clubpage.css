@@ -1,0 +1,18 @@
+.Clubpage{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fitem{
+    width: 10%;
+}
+
+.item1{
+    order: 1;
+    flex-grow: 1.8;
+}
+
+.item2{
+    order: 2;
+    flex-grow: 8.2;
+} 
