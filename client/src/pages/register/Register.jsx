@@ -72,10 +72,10 @@ export default function Register(props) {
           </div>
           <div className="loginRight">
             <div className="loginBox">
-              <input placeholder="Username" className="loginInput" name="name" onChange={userChange} />
-              <input placeholder="Email" className="loginInput" name="username" onChange={userChange} />
-              <input placeholder="Password" className="loginInput" name="password1" onChange={userChange} />
-              <input placeholder="Password Again" className="loginInput" name="password2" onChange={userChange} />
+              <input placeholder="Username" className="loginInput" name="name" autoComplete="off" autoCorrect="off" onChange={userChange} />
+              <input placeholder="Email" className="loginInput" name="username" autoComplete="off" autoCorrect="off"  onChange={userChange} />
+              <input placeholder="Password" className="loginInput" name="password1" type="password" onChange={userChange} />
+              <input placeholder="Password Again" className="loginInput" name="password2" type="password" onChange={userChange} />
               <button className="loginButton" type="submit" onClick={submit}>Sign Up</button>
               {/* {passUnequal && <p>Passwords don't match</p>} */}
               <button className="loginRegisterButton"><Link to="/" className="link">

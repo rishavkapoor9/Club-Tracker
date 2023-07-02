@@ -64,8 +64,8 @@ export default function Login(props) {
         </div>
         <div className="loginRight">
           <div className="loginBox">
-            <input placeholder="Email" className="loginInput" name="username" onChange={userChange}/>
-            <input placeholder="Password" className="loginInput" name="password" onChange={userChange}/>
+            <input placeholder="Email" className="loginInput" name="username" autoComplete="off" autoCorrect="off"  onChange={userChange}/>
+            <input placeholder="Password" className="loginInput" name="password" type="password" onChange={userChange}/>
             <button className="loginButton"><a onClick={submit} className="link">Log In</a></button>
             {/* <span className="loginForgot">Forgot Password?</span> */}
             <button className="loginRegisterButton"><Link to="/register" className="link">
