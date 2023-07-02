@@ -31,8 +31,13 @@ app.use(passport.session());
 
 const userSchema = new mongoose.Schema({
     username: String,
+    name: String,
     password: String,
-})
+    admin: {
+        type: Boolean,
+        default: false
+    }
+},{timestamps: true})
 userSchema.plugin(passportLocalMongoose);
 const User = new mongoose.model("User",userSchema);
 passport.use(User.createStrategy());
@@ -45,23 +50,27 @@ passport.serializeUser(function(user, done) {
 });
 
 
-const urlSchema = new mongoose.Schema({
+const postSchema = new mongoose.Schema({
     username: String,
-    full: String,
-    short: {
-        type: String,
-        default: shortId.generate
-    },
-    note: String
-})
-const Url = new mongoose.model("Url",urlSchema);
+    name: String,
+    image: String,
+    video: String,
+    description: String
+},{timestamps: true})
+const Post = new mongoose.model("Post", postSchema);
 
-app.get('/api/get/:username', function(req,res){
-    Url.find({username: req.params.username}).then((urls)=>{res.send(urls)});
+app.post("/create",(req,res)=>{
+    const {username,name} = req.user;
+    Post.create({username: username, name: name, ...req.body});
+    res.send("ok")
 })
-app.get('/api/geturl/:short', function(req,res){
-    Url.find({short: req.params.short}).then(function(urls){res.json({full: urls[0].full})});
-})
+
+// app.get('/api/get/:username', function(req,res){
+//     Url.find({username: req.params.username}).then((urls)=>{res.send(urls)});
+// })
+// app.get('/api/geturl/:short', function(req,res){
+//     Url.find({short: req.params.short}).then(function(urls){res.json({full: urls[0].full})});
+// })
 app.get('/login',function(req,res){
     if (req.isAuthenticated()) {
         res.json({ isAuthenticated: true, user: req.user });
@@ -72,14 +81,15 @@ app.get('/login',function(req,res){
 app.get('/logout',function(req,res){
     req.logout(function(){});
 })
-app.post('/api/insert', function(req,res){
-    const url = req.body.url
-    const note = req.body.note
-    const username = req.body.user;
-    Url.insertMany([{username: username,full: url, note: note}]).then(()=>{});
-})
+// app.post('/api/insert', function(req,res){
+//     const url = req.body.url
+//     const note = req.body.note
+//     const username = req.body.user;
+//     Url.insertMany([{username: username,full: url, note: note}]).then(()=>{});
+// })
 app.post('/signup',function(req,res){
-    User.register({username: req.body.username}, req.body.password, function(err,user){
+    console.log("aya")
+    User.register({username: req.body.username, admin: req.body.admin, name:req.body.name}, req.body.password, function(err,user){
         if(err){
             console.log(err);
             // res.redirect("/signup");
@@ -110,11 +120,13 @@ app.post("/login", function(req, res){
                     });
                 }
                 else {
-                    // res.send({message: "no user"});
+                    res.send({message: "wrong password"});
                 }
             }
         })(req, res);
         } else {
+            res.send({message: "no user"});
+
             // res.redirect("/login")
         }
     });

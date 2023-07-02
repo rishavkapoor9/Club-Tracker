@@ -1,60 +1,75 @@
+import Axios from "axios";
 import "./groups.css";
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useNavigate } from "react-router-dom";
 
-export default function Groups() {
+export default function Groups(props) {
+    Axios.defaults.withCredentials = true;
+    Axios.defaults.headers = {
+        'X-Requested-With': 'XMLHttpRequest',
+    };
+    Axios.defaults.credentials = 'include';
+    const navigate = useNavigate();
+    async function logout(event) {
+        await Axios.get("http://localhost:4000/logout").then(() => {})
+        navigate("/login");
+        event.preventDefault();
+
+       
+    }
     return (
         <div className="group">
             <div className="groupWrapper">
                 <div className="groupTop">
                     <div className="user-handel">
                         <div className="initials">
-                            <div className="handleUsername">Enactus IIT Roorkee</div>
-                            <div className="handleAccount">enactus_iitr</div>
+                            <div className="handleUsername">{props.user.name}</div>
+                            <div className="handleAccount">{props.user.username}</div>
                         </div>
                         <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
                     </div>
                     <div className="logoutIcon">
-                    <a href="/login" className="link"><LogoutIcon /></a>
+                        <a onClick={logout} href="/login" className="link"><LogoutIcon /></a>
                     </div>
                 </div>
-                <hr className="line"/>
+                <hr className="line" />
                 <div className="homePage"><a href="/" className="link">Home</a></div>
-                <hr className="line"/>
+                <hr className="line" />
                 <div className="list-1">
                     <div className="section-1">Technical Clubs</div>
                     <div className="scrollable-list-1">
                         <ul className="noBullets-1">
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                             <li className="l-1">
-                            <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-1">Data Science</div>
+                                <img className="club-1" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-1">Data Science</div>
                             </li>
                         </ul>
                     </div>
@@ -63,32 +78,32 @@ export default function Groups() {
                     <div className="scrollable-list-2">
                         <ul className="noBullets-2">
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-2">
-                            <img className="club-2" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-2" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                         </ul>
                     </div>
@@ -97,32 +112,32 @@ export default function Groups() {
                     <div className="scrollable-list-3">
                         <ul className="noBullets-3">
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-3">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-3">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-3">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-3">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-3">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-3">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-2">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-2">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-3">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-3">Data Science</div>
                             </li>
                             <li className="l-3">
-                            <img className="club-3" src="/assets/person/1.jpeg" alt="" />
-                            <div className="club-name-3">Data Science</div>
+                                <img className="club-3" src="/assets/person/1.jpeg" alt="" />
+                                <div className="club-name-3">Data Science</div>
                             </li>
                         </ul>
                     </div>
