@@ -7,12 +7,14 @@ export default function User_home(props) {
   return (
     <>
       <div className="homeContainer ">
-        <div className="flexhomecontainer1 homeContainer1">
+        <div className="homecontainerflex1 homeContainer2">
           <Sidebar user={props.user}/>
         </div>
-        <div className="flexhomecontainer2 homeContainer1">
+        <div className="homecontainerflex2 homeContainer2">
           <Feed />
         </div>
+
+        <div className="homecontainerflex3 homeContainer2"></div>  {/* blank div */} 
       </div>
     </>
   );

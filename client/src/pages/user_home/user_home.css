@@ -3,14 +3,18 @@
     width: 100%;
 }
 
-.homecontainer1{
+.homeContainer2{
     width: 10%;
 }
 
-.flexhomeContainer1{
+.homecontainerflex1{
     flex-grow: 1.6;
 }
 
-.flexhomeContainer2{
-    flex-grow: 8.4;
+.homecontainerflex2{
+    flex-grow: 5.3;
+}
+
+.homecontainerflex3{
+    flex-grow: 3.1;
 }
