@@ -1,7 +1,7 @@
 import Axios from "axios";
 import "./groups.css";
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Groups(props) {
     Axios.defaults.withCredentials = true;
@@ -22,11 +22,11 @@ export default function Groups(props) {
             <div className="groupWrapper">
                 <div className="groupTop">
                     <div className="user-handel">
-                        <div className="initials">
-                            <div className="handleUsername">{props.user.name}</div>
-                            <div className="handleAccount">{props.user.username}</div>
+                        <div className="initials1">
+                            <div className="handleUsername1">{props.user.name}</div>
+                            <div className="handleAccount1">{props.user.username}</div>
                         </div>
-                        <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+                        <img className="shareProfileImg1" src="/assets/person/1.jpeg" alt="" />
                     </div>
                     <div className="logoutIcon">
                         <a onClick={logout} href="/login" className="link"><LogoutIcon /></a>
@@ -41,7 +41,7 @@ export default function Groups(props) {
                         <ul className="noBullets-1">
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
-                                <div className="club-name-1">Data Science</div>
+                                <Link to='/clubs/data_science' className="club-name-1">Data Science</Link>
                             </li>
                             <li className="l-1">
                                 <img className="club-1" src="/assets/person/1.jpeg" alt="" />
