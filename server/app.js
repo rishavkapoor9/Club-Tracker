@@ -55,7 +55,17 @@ const postSchema = new mongoose.Schema({
     name: String,
     image: String,
     video: String,
-    description: String
+    description: String,
+    likes: Number,
+    // comments: {
+    //     username: String,
+    //     name: String,
+    //     text: String,
+    //     time: {
+    //         type: Date,
+    //         default: new Date()
+    //     }
+    // }
 },{timestamps: true})
 const Post = new mongoose.model("Post", postSchema);
 
