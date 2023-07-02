@@ -2,3 +2,15 @@
     display: flex;
     width: 100%;
 }
+
+.homecontainer1{
+    width: 10%;
+}
+
+.flexhomeContainer1{
+    flex-grow: 1.6;
+}
+
+.flexhomeContainer2{
+    flex-grow: 8.4;
+}
