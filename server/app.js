@@ -53,15 +53,28 @@ passport.serializeUser(function(user, done) {
 const postSchema = new mongoose.Schema({
     username: String,
     name: String,
-    image: String,
+    image: Object,
     video: String,
-    description: String
+    description: String,
+    likes: {
+        type: Number,
+        default: 0
+    },
+    comments: [{
+        username: String,
+        name: String,
+        text: String,
+        time: {
+            type: Date,
+            default: new Date()
+        }
+    }]
 },{timestamps: true})
 const Post = new mongoose.model("Post", postSchema);
 
-app.post("/create",(req,res)=>{
-    const {username,name} = req.user;
-    Post.create({username: username, name: name, ...req.body});
+app.post("/api/createPost",(req,res)=>{
+    // const {username,name} = req.user;
+    // Post.create({ ...req.body});
     res.send("ok")
 })
 
