@@ -1,0 +1,29 @@
+.clubinfo {
+    height: fit-content;
+    width: 97%;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cont{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.flexh{
+    width: 10%;
+}
+
+.flexh1{
+    order: 1;
+    flex-grow: 2.5;
+}
+
+.flexh2{
+    order: 2;
+    flex-grow: 7.5;
+}

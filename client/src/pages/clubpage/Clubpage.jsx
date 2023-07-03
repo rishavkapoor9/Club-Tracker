@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Clubpage.css"
-import Sidenav from './Sidenav'
-import ClubInfo from './ClubInfo'
+import Sidebar from "../../components/sidebar/Sidebar";
+import ClubInfo from '../../components/ClubInfo/ClubInfo';
 
 
 function Clubpage() {
   return (
     <div className='Clubpage'>
-       <div className='fitem item1'><Sidenav/></div>
+       <div className='fitem item1'><Sidebar/></div>
        <div className='fitem item2'><ClubInfo/></div>
     </div>
   )
