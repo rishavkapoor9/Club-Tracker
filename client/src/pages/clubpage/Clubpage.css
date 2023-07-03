@@ -9,10 +9,10 @@
 
 .item1{
     order: 1;
-    flex-grow: 1.8;
+    flex-grow: 1.6;
 }
 
 .item2{
     order: 2;
-    flex-grow: 8.2;
+    flex-grow: 8.4;
 } 

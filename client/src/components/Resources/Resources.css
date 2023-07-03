@@ -1,0 +1,46 @@
+.res{
+    margin-top: 1rem;
+    width: 22vw;
+    height:fit-content;
+    border-radius: 8px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.reswrapper{
+    padding: 1%;
+}
+
+.groupTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading{
+    color: #039;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 1% 1% 0% 7%;
+}
+
+.edit{
+    color: #039;
+    font-size: 80%;
+    padding: 1% 1% 0% 1%; 
+}
+
+.linkss{
+    color: #252525;
+    font-size: 15px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0% 0% 0% 6%;
+}
+
+.list1{
+    list-style-type: none;
+    padding: 0% 0% 0% 2%;
+}
